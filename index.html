@@ -9,16 +9,47 @@
 
     <style>
         body {
+
             background-color: rgb(70, 155, 177);    
             padding: 50px
         }
         div {
+            /* display: grid;
+            justify-content: column; */
+            display: flex;
+            flex-direction:row;
+            flex-wrap: wrap;
+            justify-content: space-around;
             background-color: coral;
             padding: 25px;
+            box-shadow: 13px -3px 15px 6px rgb(14, 10, 10);
         }
         p {
+            border: 1px white solid;
             padding: 1px;
             font-size: 150px;
+            flex-grow:2;
+        }
+        #word{
+            font-size: 20px;
+            padding: 35px;
+           
+        }
+        .basketball{
+            flex-grow: 2;
+        }
+        .poop{
+
+        }
+        .burger{
+            flex-grow: 2
+        }
+        .burger{
+
+        }
+        h1 {
+            padding: 35px;
+            border: 1px white solid;
         }
 
     </style>
@@ -31,8 +62,15 @@
     <div class="container">
 
             <h1>The res.sendFile() Works!</h1>
-            <p>&#128169;</p>
-            <p>&#127828;</p>
+            <p id="word">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis consectetur vitae cupiditate id sunt accusamus animi facere odit rem tenetur optio et pariatur, aperiam tempore autem illo doloribus dicta placeat.</p>
+            <p class="poop">&#128169;</p>
+            <p class="burger">&#127828;</p>
+            <p class="basketball">&#9977;</p>
+            <p class="violin">🎻</p>
+            <p class="poop">&#128169;</p>
+            <p class="burger">&#127828;</p>
+            <p class="basketball">&#9977;</p>
+            <p class="violin">🎻</p>
     </div>
 
 </body>
